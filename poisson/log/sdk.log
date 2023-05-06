@@ -1,0 +1,540 @@
+2023-02-10 13:39:21,577 [main] [org.apache.http.client.protocol.RequestAddCookies] [DEBUG] - CookieSpec selected: default
+2023-02-10 13:39:21,613 [main] [org.apache.http.client.protocol.RequestAuthCache] [DEBUG] - Auth cache not set in the context
+2023-02-10 13:39:21,617 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection request: [route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2023-02-10 13:39:21,642 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection leased: [id: 0][route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 13:39:21,645 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Opening connection {}->http://api-c5.icoremail.net:80
+2023-02-10 13:39:21,715 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connecting to api-c5.icoremail.net/139.159.196.18:80
+2023-02-10 13:39:21,731 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connection established 192.168.11.11:62204<->139.159.196.18:80
+2023-02-10 13:39:21,731 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Executing request POST /apiws/services/API2 HTTP/1.1
+2023-02-10 13:39:21,731 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Target auth state: UNCHALLENGED
+2023-02-10 13:39:21,732 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Proxy auth state: UNCHALLENGED
+2023-02-10 13:39:21,735 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> POST /apiws/services/API2 HTTP/1.1
+2023-02-10 13:39:21,736 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Content-Type: text/xml; charset=UTF-8
+2023-02-10 13:39:21,736 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Content-Length: 283
+2023-02-10 13:39:21,736 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Host: api-c5.icoremail.net
+2023-02-10 13:39:21,736 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Connection: Keep-Alive
+2023-02-10 13:39:21,737 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)
+2023-02-10 13:39:21,738 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2023-02-10 13:39:21,739 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "POST /apiws/services/API2 HTTP/1.1[\r][\n]"
+2023-02-10 13:39:21,739 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Content-Type: text/xml; charset=UTF-8[\r][\n]"
+2023-02-10 13:39:21,739 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Content-Length: 283[\r][\n]"
+2023-02-10 13:39:21,739 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Host: api-c5.icoremail.net[\r][\n]"
+2023-02-10 13:39:21,740 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2023-02-10 13:39:21,740 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)[\r][\n]"
+2023-02-10 13:39:21,740 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-02-10 13:39:21,740 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "[\r][\n]"
+2023-02-10 13:39:21,741 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:apiw="http://coremail.cn/apiws"><soapenv:Header/><soapenv:Body><apiw:requestToken><app_id>public@poissonsoft.com</app_id><secret>Public123</secret></apiw:requestToken></soapenv:Body></soapenv:Envelope>"
+2023-02-10 13:39:21,765 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+2023-02-10 13:39:21,766 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Server: nginx[\r][\n]"
+2023-02-10 13:39:21,766 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Date: Fri, 10 Feb 2023 05:39:22 GMT[\r][\n]"
+2023-02-10 13:39:21,766 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Content-Type: text/xml;charset=UTF-8[\r][\n]"
+2023-02-10 13:39:21,767 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2023-02-10 13:39:21,767 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2023-02-10 13:39:21,767 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2023-02-10 13:39:21,767 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-Protected-By: OpenRASP[\r][\n]"
+2023-02-10 13:39:21,768 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-Request-ID: 4afb1b9318a248c1af867071393bc4f1[\r][\n]"
+2023-02-10 13:39:21,768 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+2023-02-10 13:39:21,768 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2023-02-10 13:39:21,768 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2023-02-10 13:39:21,768 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[\r][\n]"
+2023-02-10 13:39:21,769 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "e9[\r][\n]"
+2023-02-10 13:39:21,769 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]u[0x90][0xdd]j[0xc2]@[0x10][0x85]_E|[0x80][0x8c][0xf9]QI[0xd8].h)(DZD([0xf4]n[0xdd]Lj[0xda]uw[0xb3][0xb3]I[0xdb][0xb7][0xef]&[0xc6][0xde][0xf5]j[0xe][0xe7]0[0xdf][0xfc]02[0xc2][0x16]O[0xba]Ge,[0xce][0xbe][0xaf]JS1x[0xf][0xf3][0x8b][0xf7][0xb6][0x0] y[0xc1][0xab][0xa0](D[0x83][0x1f][0x19][0xf7][0xe][0x83][0x0][0x9c][0x9a]`[0xce][0xd9]H[0xd9][0x9a][0xea][0x87]3MI[0xe1][0xb0][0xed][0x90][0xfc][0xc9]|[0xa2]>"Y[0xa3][0xe9][0xce][0xe][0xf1][0x1f]Z[0x1a][0x17][0xd0][0x8d][0x8a][0xa4][0x6]a[0x9b]/[\n]"
+2023-02-10 13:39:21,769 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "$[0x87][0xbe]s[0x9a]3i*[0xe4][0xb][0x6]c[\r].u[0xca][0xf3][0xed]f#[0xf7]][0xdf][0x1f][0xe8][0xb1]m[0x9b][0x17]w[0xb6][0x1f][0xe5][0xfe]T[0x96][0xcf][0xf5][0x9b]z[0xdd][0xb9][0xe3]l}[0xce]p[0x91][0xa7][0xb5]H[0xd3]xY[0xe5]Y[0x95][0xc7]u,[0xea]8Y[0xe5][0xc9]:[0xcd]2[0x6][0x13]i[0x10][0xb7]A[0xf0][0xdf][0xc2][0x9c][0x8d]wNg[0xdd][0xf4][0xfd]Q[0xfc][0x17]I[0x13][0x95][0x16]8[0x1][0x0][0x0][\r][\n]"
+2023-02-10 13:39:21,769 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "0[\r][\n]"
+2023-02-10 13:39:21,770 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[\r][\n]"
+2023-02-10 13:39:21,774 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << HTTP/1.1 200 
+2023-02-10 13:39:21,774 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Server: nginx
+2023-02-10 13:39:21,775 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Date: Fri, 10 Feb 2023 05:39:22 GMT
+2023-02-10 13:39:21,775 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Content-Type: text/xml;charset=UTF-8
+2023-02-10 13:39:21,775 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Transfer-Encoding: chunked
+2023-02-10 13:39:21,775 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Connection: keep-alive
+2023-02-10 13:39:21,775 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Vary: Accept-Encoding
+2023-02-10 13:39:21,775 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-Protected-By: OpenRASP
+2023-02-10 13:39:21,776 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-Request-ID: 4afb1b9318a248c1af867071393bc4f1
+2023-02-10 13:39:21,776 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-XSS-Protection: 0
+2023-02-10 13:39:21,776 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+2023-02-10 13:39:21,776 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Content-Encoding: gzip
+2023-02-10 13:39:21,785 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Connection can be kept alive indefinitely
+2023-02-10 13:39:21,794 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection [id: 0][route: {}->http://api-c5.icoremail.net:80] can be kept alive indefinitely
+2023-02-10 13:39:21,794 [main] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] [DEBUG] - http-outgoing-0: set socket timeout to 0
+2023-02-10 13:39:21,794 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection released: [id: 0][route: {}->http://api-c5.icoremail.net:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 13:40:28,209 [main] [org.apache.http.client.protocol.RequestAddCookies] [DEBUG] - CookieSpec selected: default
+2023-02-10 13:40:28,243 [main] [org.apache.http.client.protocol.RequestAuthCache] [DEBUG] - Auth cache not set in the context
+2023-02-10 13:40:28,246 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection request: [route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2023-02-10 13:40:28,269 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection leased: [id: 0][route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 13:40:28,272 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Opening connection {}->http://api-c5.icoremail.net:80
+2023-02-10 13:40:28,336 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connecting to api-c5.icoremail.net/139.159.196.18:80
+2023-02-10 13:40:28,351 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connection established 192.168.11.11:62237<->139.159.196.18:80
+2023-02-10 13:40:28,351 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Executing request POST /apiws/services/API2 HTTP/1.1
+2023-02-10 13:40:28,351 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Target auth state: UNCHALLENGED
+2023-02-10 13:40:28,353 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Proxy auth state: UNCHALLENGED
+2023-02-10 13:40:28,356 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> POST /apiws/services/API2 HTTP/1.1
+2023-02-10 13:40:28,356 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Content-Type: text/xml; charset=UTF-8
+2023-02-10 13:40:28,356 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Content-Length: 283
+2023-02-10 13:40:28,356 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Host: api-c5.icoremail.net
+2023-02-10 13:40:28,357 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Connection: Keep-Alive
+2023-02-10 13:40:28,357 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)
+2023-02-10 13:40:28,358 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2023-02-10 13:40:28,359 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "POST /apiws/services/API2 HTTP/1.1[\r][\n]"
+2023-02-10 13:40:28,359 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Content-Type: text/xml; charset=UTF-8[\r][\n]"
+2023-02-10 13:40:28,359 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Content-Length: 283[\r][\n]"
+2023-02-10 13:40:28,359 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Host: api-c5.icoremail.net[\r][\n]"
+2023-02-10 13:40:28,359 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2023-02-10 13:40:28,360 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)[\r][\n]"
+2023-02-10 13:40:28,360 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-02-10 13:40:28,360 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "[\r][\n]"
+2023-02-10 13:40:28,360 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:apiw="http://coremail.cn/apiws"><soapenv:Header/><soapenv:Body><apiw:requestToken><app_id>public@poissonsoft.com</app_id><secret>Public123</secret></apiw:requestToken></soapenv:Body></soapenv:Envelope>"
+2023-02-10 13:40:28,381 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+2023-02-10 13:40:28,381 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Server: nginx[\r][\n]"
+2023-02-10 13:40:28,381 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Date: Fri, 10 Feb 2023 05:40:28 GMT[\r][\n]"
+2023-02-10 13:40:28,382 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Content-Type: text/xml;charset=UTF-8[\r][\n]"
+2023-02-10 13:40:28,382 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2023-02-10 13:40:28,382 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2023-02-10 13:40:28,382 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2023-02-10 13:40:28,383 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-Protected-By: OpenRASP[\r][\n]"
+2023-02-10 13:40:28,383 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-Request-ID: 8b5865ddd0924a08aa06597bd12f14fa[\r][\n]"
+2023-02-10 13:40:28,383 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+2023-02-10 13:40:28,383 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2023-02-10 13:40:28,383 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2023-02-10 13:40:28,384 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[\r][\n]"
+2023-02-10 13:40:28,384 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "e5[\r][\n]"
+2023-02-10 13:40:28,384 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]u[0x90]Mn[0xc2]0[0x10][0x85][0xaf][0x82]8@&[0x98]$[0x90][0xc8][0xb5]T[0x10][0x12][0xed][0xa6]m[0xd4][0xb]Xf[0x14][0xd2]:[0xb6][0xf1]8)[0xdc][0xbe]N[0x8][0xdd]u5O[0xef]i[0xbe][0xf9][0xe1]d[0xa5][0xab][0xe]f@m[0x1d].[0xae][0x9d]6T[0x8d][0xde][0xd3][0xf2][0x1c][0x82][0xab][0x0]H[0x9d][0xb1][0x93][0x94][0xc4]h[0xf4][0x13][0xeb][0x1b][0x18][0x5][0xe0][0xdc][0x4]K[0xc1]'[0xca][0xce][0x9e]n[0x82][0x1b]b[0x95][0xc7]K[0x8f][0x14]>[0xed]7[0x9a][0x1a][0xc9]YC[0xf]v[0x8c][0xff][0xd0][0xca][0xfa][0x88]nu[0xa2][0xc]H[0xd7][0xfe]P$y[0xc][0xbd]7[0x82]+{B[0x91]r[0x98]jt[0xa9][0xd7]A[0xec][0x9e]o[0xea][0xa5][0x1f][0x6][0xdd]}[0xbc]S[0xf3]u[0xdc][0xc7][0x9e][0xfd]5[0xbc][0xda]K[[0xbf]5[0xbe]^[0xe4]l[0xb3]N[0xd9]:[0xcb][0xb2][0xb2],[0xd8]v[0x93][0xb2][0xbc][0x90]E[0xbe]])d+%K[0xe]3i[0x14][0xf7]A[0xf0][0xdf][0xc2][0x82]Ow[0xce]g[0xdd][0xf5][0xe3]Q[0xe2][0x17]9[0x97]6C8[0x1][0x0][0x0][\r][\n]"
+2023-02-10 13:40:28,384 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "0[\r][\n]"
+2023-02-10 13:40:28,385 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[\r][\n]"
+2023-02-10 13:40:28,389 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << HTTP/1.1 200 
+2023-02-10 13:40:28,390 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Server: nginx
+2023-02-10 13:40:28,390 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Date: Fri, 10 Feb 2023 05:40:28 GMT
+2023-02-10 13:40:28,390 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Content-Type: text/xml;charset=UTF-8
+2023-02-10 13:40:28,390 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Transfer-Encoding: chunked
+2023-02-10 13:40:28,390 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Connection: keep-alive
+2023-02-10 13:40:28,391 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Vary: Accept-Encoding
+2023-02-10 13:40:28,391 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-Protected-By: OpenRASP
+2023-02-10 13:40:28,391 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-Request-ID: 8b5865ddd0924a08aa06597bd12f14fa
+2023-02-10 13:40:28,391 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-XSS-Protection: 0
+2023-02-10 13:40:28,391 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+2023-02-10 13:40:28,392 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Content-Encoding: gzip
+2023-02-10 13:40:28,402 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Connection can be kept alive indefinitely
+2023-02-10 13:40:28,410 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection [id: 0][route: {}->http://api-c5.icoremail.net:80] can be kept alive indefinitely
+2023-02-10 13:40:28,410 [main] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] [DEBUG] - http-outgoing-0: set socket timeout to 0
+2023-02-10 13:40:28,410 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection released: [id: 0][route: {}->http://api-c5.icoremail.net:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 13:41:34,123 [main] [org.apache.http.client.protocol.RequestAddCookies] [DEBUG] - CookieSpec selected: default
+2023-02-10 13:41:34,147 [main] [org.apache.http.client.protocol.RequestAuthCache] [DEBUG] - Auth cache not set in the context
+2023-02-10 13:41:34,151 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection request: [route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2023-02-10 13:41:34,176 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection leased: [id: 0][route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 13:41:34,179 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Opening connection {}->http://api-c5.icoremail.net:80
+2023-02-10 13:41:34,246 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connecting to api-c5.icoremail.net/139.159.196.18:80
+2023-02-10 13:41:34,262 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connection established 192.168.11.11:62270<->139.159.196.18:80
+2023-02-10 13:41:34,262 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Executing request POST /apiws/services/API2 HTTP/1.1
+2023-02-10 13:41:34,263 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Target auth state: UNCHALLENGED
+2023-02-10 13:41:34,264 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Proxy auth state: UNCHALLENGED
+2023-02-10 13:41:34,268 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> POST /apiws/services/API2 HTTP/1.1
+2023-02-10 13:41:34,269 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Content-Type: text/xml; charset=UTF-8
+2023-02-10 13:41:34,269 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Content-Length: 283
+2023-02-10 13:41:34,269 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Host: api-c5.icoremail.net
+2023-02-10 13:41:34,270 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Connection: Keep-Alive
+2023-02-10 13:41:34,270 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)
+2023-02-10 13:41:34,272 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2023-02-10 13:41:34,272 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "POST /apiws/services/API2 HTTP/1.1[\r][\n]"
+2023-02-10 13:41:34,273 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Content-Type: text/xml; charset=UTF-8[\r][\n]"
+2023-02-10 13:41:34,273 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Content-Length: 283[\r][\n]"
+2023-02-10 13:41:34,273 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Host: api-c5.icoremail.net[\r][\n]"
+2023-02-10 13:41:34,274 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2023-02-10 13:41:34,274 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)[\r][\n]"
+2023-02-10 13:41:34,274 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-02-10 13:41:34,274 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "[\r][\n]"
+2023-02-10 13:41:34,275 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:apiw="http://coremail.cn/apiws"><soapenv:Header/><soapenv:Body><apiw:requestToken><app_id>public@poissonsoft.com</app_id><secret>Public123</secret></apiw:requestToken></soapenv:Body></soapenv:Envelope>"
+2023-02-10 13:41:34,294 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+2023-02-10 13:41:34,295 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Server: nginx[\r][\n]"
+2023-02-10 13:41:34,295 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Date: Fri, 10 Feb 2023 05:41:34 GMT[\r][\n]"
+2023-02-10 13:41:34,295 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Content-Type: text/xml;charset=UTF-8[\r][\n]"
+2023-02-10 13:41:34,296 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2023-02-10 13:41:34,296 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2023-02-10 13:41:34,296 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2023-02-10 13:41:34,297 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-Protected-By: OpenRASP[\r][\n]"
+2023-02-10 13:41:34,297 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-Request-ID: 47f5b25549e043a2b183e49de87f9aa4[\r][\n]"
+2023-02-10 13:41:34,297 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+2023-02-10 13:41:34,297 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2023-02-10 13:41:34,297 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2023-02-10 13:41:34,298 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[\r][\n]"
+2023-02-10 13:41:34,298 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "ea[\r][\n]"
+2023-02-10 13:41:34,298 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]u[0x90][0xcb]n[0xc2]0[0x10]E[0x5][0xf1][0x1][0x99]`[0xa5][0xa6]D[0xae]%@[0xad][0xfa]PYDU[0x85][0xba]K[0x9c][0x9]D[\r][0xb6][0xeb]qB[0xf8][0xfb]:!t[0xd7][0xd5]\[0xdd][0xab]9[0xf3][0x10]dr[0x9b]>[0xea][0xe][0x1b]cq[0xd6][0x9f][0x1a]M[0xe9][0xe0]=[0xcc][0x8f][0xde][0xdb][0x14][0x80][0xd4][0x11]O9E![0x1a][0xfc][0xc8][0xb8][0x3][0xc][0x2]pj[0x82][0xb9][0x14]#ec[0xca][0x8b][0x14][0x9a]X[0xea][0xf0][0xa7]E[0xf2][0x1f][0xe6][0x1b]u[0x86]d[0x8d][0xa6][0x1b];[0xc4]he\@[0xd7]M[0xa4]4[0xe4][0xb6]>S 9[0xf4][0xad][0xd3]R(S[0xa2][0x8c][0x5][0x8c]5[0xb8][0xd4]6^n[0xd6][0xef][0xea][0xa5][0xed]:[0xbd]+[0xbe]r[0xbf][0xbd][0x9c][0xdf]^[0xab][0xfe][0xa9][0xff][0xac][0xcb][0xf5][0xf3].[0xdb]g[0xb3]e[0xc5][0xf9][0x82][0xad][0x92][0x98][0xc5][0xbc]Z[0xb0]$[0xbe][[0x16]UR[0x16][0xfc][0x9e]3T[0xc5]J[0xc0]D[0x1a][0xc4]u[0x10][0xfc][0xb7][0xb0][0x14][0xe3][0x9d][0xd3]YW}{[0x94][0xfc][0x5][0x8d][0x9c])[0xcc]8[0x1][0x0][0x0][\r][\n]"
+2023-02-10 13:41:34,298 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "0[\r][\n]"
+2023-02-10 13:41:34,299 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[\r][\n]"
+2023-02-10 13:41:34,304 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << HTTP/1.1 200 
+2023-02-10 13:41:34,304 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Server: nginx
+2023-02-10 13:41:34,304 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Date: Fri, 10 Feb 2023 05:41:34 GMT
+2023-02-10 13:41:34,304 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Content-Type: text/xml;charset=UTF-8
+2023-02-10 13:41:34,304 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Transfer-Encoding: chunked
+2023-02-10 13:41:34,305 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Connection: keep-alive
+2023-02-10 13:41:34,305 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Vary: Accept-Encoding
+2023-02-10 13:41:34,305 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-Protected-By: OpenRASP
+2023-02-10 13:41:34,305 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-Request-ID: 47f5b25549e043a2b183e49de87f9aa4
+2023-02-10 13:41:34,305 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-XSS-Protection: 0
+2023-02-10 13:41:34,306 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+2023-02-10 13:41:34,306 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Content-Encoding: gzip
+2023-02-10 13:41:34,314 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Connection can be kept alive indefinitely
+2023-02-10 13:41:34,322 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection [id: 0][route: {}->http://api-c5.icoremail.net:80] can be kept alive indefinitely
+2023-02-10 13:41:34,322 [main] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] [DEBUG] - http-outgoing-0: set socket timeout to 0
+2023-02-10 13:41:34,323 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection released: [id: 0][route: {}->http://api-c5.icoremail.net:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 14:09:02,244 [main] [org.apache.http.client.protocol.RequestAddCookies] [DEBUG] - CookieSpec selected: default
+2023-02-10 14:09:02,279 [main] [org.apache.http.client.protocol.RequestAuthCache] [DEBUG] - Auth cache not set in the context
+2023-02-10 14:09:02,282 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection request: [route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2023-02-10 14:09:02,308 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection leased: [id: 0][route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 14:09:02,311 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Opening connection {}->http://api-c5.icoremail.net:80
+2023-02-10 14:09:02,380 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connecting to api-c5.icoremail.net/139.159.196.18:80
+2023-02-10 14:09:02,393 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connection established 192.168.11.11:62501<->139.159.196.18:80
+2023-02-10 14:09:02,394 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Executing request POST /apiws/services/API2 HTTP/1.1
+2023-02-10 14:09:02,394 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Target auth state: UNCHALLENGED
+2023-02-10 14:09:02,395 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Proxy auth state: UNCHALLENGED
+2023-02-10 14:09:02,397 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> POST /apiws/services/API2 HTTP/1.1
+2023-02-10 14:09:02,398 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Content-Type: text/xml; charset=UTF-8
+2023-02-10 14:09:02,398 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Content-Length: 283
+2023-02-10 14:09:02,398 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Host: api-c5.icoremail.net
+2023-02-10 14:09:02,398 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Connection: Keep-Alive
+2023-02-10 14:09:02,399 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)
+2023-02-10 14:09:02,400 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2023-02-10 14:09:02,400 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "POST /apiws/services/API2 HTTP/1.1[\r][\n]"
+2023-02-10 14:09:02,401 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Content-Type: text/xml; charset=UTF-8[\r][\n]"
+2023-02-10 14:09:02,401 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Content-Length: 283[\r][\n]"
+2023-02-10 14:09:02,401 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Host: api-c5.icoremail.net[\r][\n]"
+2023-02-10 14:09:02,401 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2023-02-10 14:09:02,402 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)[\r][\n]"
+2023-02-10 14:09:02,402 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-02-10 14:09:02,402 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "[\r][\n]"
+2023-02-10 14:09:02,402 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:apiw="http://coremail.cn/apiws"><soapenv:Header/><soapenv:Body><apiw:requestToken><app_id>public@poissonsoft.com</app_id><secret>Public123</secret></apiw:requestToken></soapenv:Body></soapenv:Envelope>"
+2023-02-10 14:09:02,419 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+2023-02-10 14:09:02,419 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Server: nginx[\r][\n]"
+2023-02-10 14:09:02,420 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Date: Fri, 10 Feb 2023 06:09:02 GMT[\r][\n]"
+2023-02-10 14:09:02,420 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Content-Type: text/xml;charset=UTF-8[\r][\n]"
+2023-02-10 14:09:02,420 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2023-02-10 14:09:02,420 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2023-02-10 14:09:02,421 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2023-02-10 14:09:02,421 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-Protected-By: OpenRASP[\r][\n]"
+2023-02-10 14:09:02,421 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-Request-ID: 376d9449d5ef41a18d4277ff1d943a86[\r][\n]"
+2023-02-10 14:09:02,421 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+2023-02-10 14:09:02,421 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2023-02-10 14:09:02,422 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2023-02-10 14:09:02,422 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[\r][\n]"
+2023-02-10 14:09:02,422 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "e6[\r][\n]"
+2023-02-10 14:09:02,422 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]u[0x90][0xcb]N[0xc3]0[0x10]E[0xa5][0xea][0x7]dJ)D[0x8e][0x8c]%*Xt[0x81][0x80]([0x12][0xdd]:[0xf6][0xa4]/[0xd7]v<N([0x8f][0x93][0xa6][0xec]X[0xcd][0xd5][0xbd][0x9a]3[0xf]NN[0xfa][0xe2][0xd5][0xf6]h[0x9c][0xc7][0xd9][0xe5]l,[0x15][0x83][0xf7]4[0xdf][0xc7][0xe8][0xb][0x0]R{<K[0xca]R4[0xf8][0x99][0xb];[0x18][0x4][0xe0][0xd4][0x4]s[0xc1]G[0xca][0xda][0xe9][0x1f][0xc1]--[0x8b][0x80]m[0x87][0x14]+wB["yg[0xe9][0xc6]N[0xf1][0x1f]Z[0xb9][0x90][0xd0][0x7][0x93])[0xb][0xd2][0x1f][0xbe])[0x91][0x2][0xc6].X[0xc1][0x95][0xd3]([0x16][0x1c][0xc6][0x9a]\[0xea]L[0x14][0xeb][0xe7][0xb7][0xed][0xa6][0xeb][0xfb][0xb2]n7[0xef]U[0x85][0x9f][0xfd]G0my[0xc1][0xaf][0xed][0xcb][0xee][0x18][0xca][0x19]>"C[0x96][0xb3][0xa6][0xd1]w[0x8d][0x96][0xab][0xbc]n[0xf2][0x85][0x92][0xf][0x9a][0xa9][0x9a][0xad][0xee][0x97][0x1c]&[0xd2] [0xae][0x83][0xe0][0xbf][0x85][0x5][0x1f][0xef][0x9c][0xce][0xba][0xea][0xdb][0xa3][0xc4]/[0xf4]}Fv8[0x1][0x0][0x0][\r][\n]"
+2023-02-10 14:09:02,423 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "0[\r][\n]"
+2023-02-10 14:09:02,423 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[\r][\n]"
+2023-02-10 14:09:02,427 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << HTTP/1.1 200 
+2023-02-10 14:09:02,427 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Server: nginx
+2023-02-10 14:09:02,428 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Date: Fri, 10 Feb 2023 06:09:02 GMT
+2023-02-10 14:09:02,428 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Content-Type: text/xml;charset=UTF-8
+2023-02-10 14:09:02,428 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Transfer-Encoding: chunked
+2023-02-10 14:09:02,428 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Connection: keep-alive
+2023-02-10 14:09:02,428 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Vary: Accept-Encoding
+2023-02-10 14:09:02,428 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-Protected-By: OpenRASP
+2023-02-10 14:09:02,429 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-Request-ID: 376d9449d5ef41a18d4277ff1d943a86
+2023-02-10 14:09:02,429 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-XSS-Protection: 0
+2023-02-10 14:09:02,429 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+2023-02-10 14:09:02,429 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Content-Encoding: gzip
+2023-02-10 14:09:02,438 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Connection can be kept alive indefinitely
+2023-02-10 14:09:02,445 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection [id: 0][route: {}->http://api-c5.icoremail.net:80] can be kept alive indefinitely
+2023-02-10 14:09:02,446 [main] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] [DEBUG] - http-outgoing-0: set socket timeout to 0
+2023-02-10 14:09:02,446 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection released: [id: 0][route: {}->http://api-c5.icoremail.net:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 14:09:02,611 [main] [org.apache.http.client.protocol.RequestAddCookies] [DEBUG] - CookieSpec selected: default
+2023-02-10 14:09:02,611 [main] [org.apache.http.client.protocol.RequestAuthCache] [DEBUG] - Auth cache not set in the context
+2023-02-10 14:09:02,612 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection request: [route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2023-02-10 14:09:02,612 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection leased: [id: 1][route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 14:09:02,612 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Opening connection {}->http://api-c5.icoremail.net:80
+2023-02-10 14:09:02,613 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connecting to api-c5.icoremail.net/139.159.196.18:80
+2023-02-10 14:09:02,626 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connection established 192.168.11.11:62502<->139.159.196.18:80
+2023-02-10 14:09:02,626 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Executing request POST /apiws/services/API2 HTTP/1.1
+2023-02-10 14:09:02,626 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Target auth state: UNCHALLENGED
+2023-02-10 14:09:02,626 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Proxy auth state: UNCHALLENGED
+2023-02-10 14:09:02,627 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> POST /apiws/services/API2 HTTP/1.1
+2023-02-10 14:09:02,627 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Content-Type: text/xml; charset=UTF-8
+2023-02-10 14:09:02,627 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Content-Length: 291
+2023-02-10 14:09:02,627 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Host: api-c5.icoremail.net
+2023-02-10 14:09:02,627 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Connection: Keep-Alive
+2023-02-10 14:09:02,628 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)
+2023-02-10 14:09:02,628 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2023-02-10 14:09:02,628 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "POST /apiws/services/API2 HTTP/1.1[\r][\n]"
+2023-02-10 14:09:02,628 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Content-Type: text/xml; charset=UTF-8[\r][\n]"
+2023-02-10 14:09:02,628 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Content-Length: 291[\r][\n]"
+2023-02-10 14:09:02,629 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Host: api-c5.icoremail.net[\r][\n]"
+2023-02-10 14:09:02,629 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2023-02-10 14:09:02,629 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)[\r][\n]"
+2023-02-10 14:09:02,629 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-02-10 14:09:02,629 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "[\r][\n]"
+2023-02-10 14:09:02,630 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:apiw="http://coremail.cn/apiws"><soapenv:Header/><soapenv:Body><apiw:userLogin><_token>result</_token><user_at_domain>chenhua@poissonsoft.com</user_at_domain></apiw:userLogin></soapenv:Body></soapenv:Envelope>"
+2023-02-10 14:09:02,642 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "HTTP/1.1 200 [\r][\n]"
+2023-02-10 14:09:02,642 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Server: nginx[\r][\n]"
+2023-02-10 14:09:02,643 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Date: Fri, 10 Feb 2023 06:09:02 GMT[\r][\n]"
+2023-02-10 14:09:02,643 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Content-Type: text/xml;charset=UTF-8[\r][\n]"
+2023-02-10 14:09:02,643 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+2023-02-10 14:09:02,643 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2023-02-10 14:09:02,643 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Vary: Accept-Encoding[\r][\n]"
+2023-02-10 14:09:02,644 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "X-Protected-By: OpenRASP[\r][\n]"
+2023-02-10 14:09:02,644 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "X-Request-ID: c012942858fc4b7685a5bda516391bfc[\r][\n]"
+2023-02-10 14:09:02,644 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "X-XSS-Protection: 0[\r][\n]"
+2023-02-10 14:09:02,644 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2023-02-10 14:09:02,644 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+2023-02-10 14:09:02,645 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "[\r][\n]"
+2023-02-10 14:09:02,645 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "b5[\r][\n]"
+2023-02-10 14:09:02,645 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]m[0x8f][0xc1][0xe][0x82]0[0x10]D[0x85][0xf0][0x1][0xac][0x1a]O[0xcd][0xda][0x83][0x89][0x7][0x13]O[0xfe]A[0x3][0x1b]h,[0xbb]M[0xb7][0xa0][0xfe][0xbd][0x80][0xe0][0xc9][0xdb]d&[0xf3]2[0x83]*.[0x9a][0xb][0x8f][0x14]$R[0xf1][0xea][0x3][0xab][0x99][0xbd]S[0xd9][0xe5][0x1c][\r][0x80][0xd6][0x1d][0xf5]N[0xab])[0x9a][0xfd]JR[0xb][0xb3][0x0]ZKPZ\(gi[0xde][0x16]Y[0xf]fPJ7i=[0xdf]I[0xa3][0xb0]n[0xe0])[0xfb]qkI[0x13][0xd7][0x87][0xaa]fp[0xd1]?u[0xc2]$[0xca]Cb[0x8b][0xb5]4d[0x8f][0xbb]=[0xc2][0xa2][0xb0]'U[0xd7][0x92][0xbd][0xf2][0xe8][0x82]o[\n]"
+2023-02-10 14:09:02,645 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "7[0xe4][0xae][0xc8][0xf2] F[0xd8]2[0x84][0xad][\r]'X\f[0xaf]+[0xbf]z[0xfb]m?[0xd1][0xc9][0xcc][0xc7][0x7][0x1][0x0][0x0][\r][\n]"
+2023-02-10 14:09:02,646 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "0[\r][\n]"
+2023-02-10 14:09:02,646 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "[\r][\n]"
+2023-02-10 14:09:02,646 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << HTTP/1.1 200 
+2023-02-10 14:09:02,646 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Server: nginx
+2023-02-10 14:09:02,646 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Date: Fri, 10 Feb 2023 06:09:02 GMT
+2023-02-10 14:09:02,647 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Content-Type: text/xml;charset=UTF-8
+2023-02-10 14:09:02,647 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Transfer-Encoding: chunked
+2023-02-10 14:09:02,647 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Connection: keep-alive
+2023-02-10 14:09:02,647 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Vary: Accept-Encoding
+2023-02-10 14:09:02,647 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << X-Protected-By: OpenRASP
+2023-02-10 14:09:02,647 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << X-Request-ID: c012942858fc4b7685a5bda516391bfc
+2023-02-10 14:09:02,648 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << X-XSS-Protection: 0
+2023-02-10 14:09:02,648 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Strict-Transport-Security: max-age=31536000
+2023-02-10 14:09:02,648 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Content-Encoding: gzip
+2023-02-10 14:09:02,648 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Connection can be kept alive indefinitely
+2023-02-10 14:09:02,649 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection [id: 1][route: {}->http://api-c5.icoremail.net:80] can be kept alive indefinitely
+2023-02-10 14:09:02,649 [main] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] [DEBUG] - http-outgoing-1: set socket timeout to 0
+2023-02-10 14:09:02,649 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection released: [id: 1][route: {}->http://api-c5.icoremail.net:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 14:09:49,785 [main] [org.apache.http.client.protocol.RequestAddCookies] [DEBUG] - CookieSpec selected: default
+2023-02-10 14:09:49,820 [main] [org.apache.http.client.protocol.RequestAuthCache] [DEBUG] - Auth cache not set in the context
+2023-02-10 14:09:49,824 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection request: [route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2023-02-10 14:09:49,849 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection leased: [id: 0][route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 14:09:49,852 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Opening connection {}->http://api-c5.icoremail.net:80
+2023-02-10 14:09:49,928 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connecting to api-c5.icoremail.net/139.159.196.18:80
+2023-02-10 14:09:49,941 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connection established 192.168.11.11:62517<->139.159.196.18:80
+2023-02-10 14:09:49,942 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Executing request POST /apiws/services/API2 HTTP/1.1
+2023-02-10 14:09:49,942 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Target auth state: UNCHALLENGED
+2023-02-10 14:09:49,943 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Proxy auth state: UNCHALLENGED
+2023-02-10 14:09:49,946 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> POST /apiws/services/API2 HTTP/1.1
+2023-02-10 14:09:49,947 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Content-Type: text/xml; charset=UTF-8
+2023-02-10 14:09:49,947 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Content-Length: 283
+2023-02-10 14:09:49,947 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Host: api-c5.icoremail.net
+2023-02-10 14:09:49,947 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Connection: Keep-Alive
+2023-02-10 14:09:49,948 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)
+2023-02-10 14:09:49,949 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2023-02-10 14:09:49,949 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "POST /apiws/services/API2 HTTP/1.1[\r][\n]"
+2023-02-10 14:09:49,950 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Content-Type: text/xml; charset=UTF-8[\r][\n]"
+2023-02-10 14:09:49,950 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Content-Length: 283[\r][\n]"
+2023-02-10 14:09:49,950 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Host: api-c5.icoremail.net[\r][\n]"
+2023-02-10 14:09:49,950 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2023-02-10 14:09:49,950 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)[\r][\n]"
+2023-02-10 14:09:49,951 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-02-10 14:09:49,951 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "[\r][\n]"
+2023-02-10 14:09:49,951 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:apiw="http://coremail.cn/apiws"><soapenv:Header/><soapenv:Body><apiw:requestToken><app_id>public@poissonsoft.com</app_id><secret>Public123</secret></apiw:requestToken></soapenv:Body></soapenv:Envelope>"
+2023-02-10 14:09:49,972 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+2023-02-10 14:09:49,973 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Server: nginx[\r][\n]"
+2023-02-10 14:09:49,973 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Date: Fri, 10 Feb 2023 06:09:50 GMT[\r][\n]"
+2023-02-10 14:09:49,973 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Content-Type: text/xml;charset=UTF-8[\r][\n]"
+2023-02-10 14:09:49,974 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2023-02-10 14:09:49,974 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2023-02-10 14:09:49,975 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2023-02-10 14:09:49,975 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-Protected-By: OpenRASP[\r][\n]"
+2023-02-10 14:09:49,976 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-Request-ID: 90d026e0034e4510a102dc136d6729cb[\r][\n]"
+2023-02-10 14:09:49,976 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+2023-02-10 14:09:49,976 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2023-02-10 14:09:49,977 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2023-02-10 14:09:49,977 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[\r][\n]"
+2023-02-10 14:09:49,978 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "e9[\r][\n]"
+2023-02-10 14:09:49,978 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]u[0x90][0xdd]N[0x2]1[0x10][0x85]_[0x85][0xf0][0x0];D`a7[0xa5][0x9]K[0xc]Q[0x89][0xc6][0x95][0x10][0xbd],[0xed] ?[0xa5][0xad][0x9d][0xee][0x8a]oowY[0xbc][0xf3]jN[0xce][0xc9]|[0xf3][0xc3][0xc8][\n]"
+2023-02-10 14:09:49,979 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[0x97][0xdf][0x9b][0x1a][0xb5]u[0xd8][0xbb][0x9c][0xb5][0xa1][0xbc][0xf1]f[0xfd]}[0x8].[0x7] [0xb9][0xc7][0xb3][0xa0]$F[0x8d][0x9f]X[0xff][0x9][0x8d][0x0][0xec][0x9a][0xa0][0xcf]YK)[0xac][0xfa][0xe1][0xcc][0xd0]][0xee][0xf1][0xab]B[\n]"
+2023-02-10 14:09:49,979 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "k{BS"9k[0xe8][0xc6][0x8e][0xf1][0x1f]ZZ[0x1f][0xd1][0x7][0x9d]H[0x3][0xc2][0x1d][0xbe])[0x92]<[0x86][0xca][0x1b][0xce][0xa4]U[0xc8][0x7][0xc][0xda][0x1a]][0xaa]t[0xe0][0xc5][0xbc]x[0xa8][0xea]Z[0xfb][0xcb][0x8a][0x1e][0x9f][0x8e][0xcb][0xc5][0xe6][0xe5][0xa3]\[0xf8][0xd5][0xf3][0xeb][0xdb][0xa9][0xf0]eOlQ[0xa4][0x93]t[0x98][0xa5]S[0xb5][0x1d][0xed][0xa6][0xe3][0xc][0x15][0xa2][0xda][\r][0xb2][0xb1][0x1c][0xca]t[0xc2][0xa0]#5[0xe2]:[0x8][0xfe][[0x98][0xb3][0xf6][0xce][0xee][0xac][0xab][0xbe]=[0x8a][0xff][0x2][0xbd][0x90][0x1]z8[0x1][0x0][0x0][\r][\n]"
+2023-02-10 14:09:49,980 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "0[\r][\n]"
+2023-02-10 14:09:49,980 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[\r][\n]"
+2023-02-10 14:09:49,988 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << HTTP/1.1 200 
+2023-02-10 14:09:49,988 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Server: nginx
+2023-02-10 14:09:49,989 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Date: Fri, 10 Feb 2023 06:09:50 GMT
+2023-02-10 14:09:49,989 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Content-Type: text/xml;charset=UTF-8
+2023-02-10 14:09:49,989 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Transfer-Encoding: chunked
+2023-02-10 14:09:49,989 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Connection: keep-alive
+2023-02-10 14:09:49,990 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Vary: Accept-Encoding
+2023-02-10 14:09:49,990 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-Protected-By: OpenRASP
+2023-02-10 14:09:49,990 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-Request-ID: 90d026e0034e4510a102dc136d6729cb
+2023-02-10 14:09:49,990 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-XSS-Protection: 0
+2023-02-10 14:09:49,991 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+2023-02-10 14:09:49,991 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Content-Encoding: gzip
+2023-02-10 14:09:49,999 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Connection can be kept alive indefinitely
+2023-02-10 14:09:50,008 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection [id: 0][route: {}->http://api-c5.icoremail.net:80] can be kept alive indefinitely
+2023-02-10 14:09:50,008 [main] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] [DEBUG] - http-outgoing-0: set socket timeout to 0
+2023-02-10 14:09:50,008 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection released: [id: 0][route: {}->http://api-c5.icoremail.net:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 14:09:50,169 [main] [org.apache.http.client.protocol.RequestAddCookies] [DEBUG] - CookieSpec selected: default
+2023-02-10 14:09:50,170 [main] [org.apache.http.client.protocol.RequestAuthCache] [DEBUG] - Auth cache not set in the context
+2023-02-10 14:09:50,170 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection request: [route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2023-02-10 14:09:50,170 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection leased: [id: 1][route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 14:09:50,171 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Opening connection {}->http://api-c5.icoremail.net:80
+2023-02-10 14:09:50,171 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connecting to api-c5.icoremail.net/139.159.196.18:80
+2023-02-10 14:09:50,182 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connection established 192.168.11.11:62519<->139.159.196.18:80
+2023-02-10 14:09:50,182 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Executing request POST /apiws/services/API2 HTTP/1.1
+2023-02-10 14:09:50,183 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Target auth state: UNCHALLENGED
+2023-02-10 14:09:50,183 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Proxy auth state: UNCHALLENGED
+2023-02-10 14:09:50,183 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> POST /apiws/services/API2 HTTP/1.1
+2023-02-10 14:09:50,183 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Content-Type: text/xml; charset=UTF-8
+2023-02-10 14:09:50,183 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Content-Length: 350
+2023-02-10 14:09:50,184 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Host: api-c5.icoremail.net
+2023-02-10 14:09:50,184 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Connection: Keep-Alive
+2023-02-10 14:09:50,184 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)
+2023-02-10 14:09:50,184 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2023-02-10 14:09:50,184 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "POST /apiws/services/API2 HTTP/1.1[\r][\n]"
+2023-02-10 14:09:50,185 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Content-Type: text/xml; charset=UTF-8[\r][\n]"
+2023-02-10 14:09:50,185 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Content-Length: 350[\r][\n]"
+2023-02-10 14:09:50,185 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Host: api-c5.icoremail.net[\r][\n]"
+2023-02-10 14:09:50,185 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2023-02-10 14:09:50,185 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)[\r][\n]"
+2023-02-10 14:09:50,186 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-02-10 14:09:50,186 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "[\r][\n]"
+2023-02-10 14:09:50,186 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:apiw="http://coremail.cn/apiws"><soapenv:Header/><soapenv:Body><apiw:userLogin><_token>BABXIuvvlrxLsJKjGCVOYRCrLNQSkBrR abea6763968db4f859edeedf095c3c67</_token><user_at_domain>chenhua@poissonsoft.com</user_at_domain></apiw:userLogin></soapenv:Body></soapenv:Envelope>"
+2023-02-10 14:09:50,206 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "HTTP/1.1 200 [\r][\n]"
+2023-02-10 14:09:50,207 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Server: nginx[\r][\n]"
+2023-02-10 14:09:50,207 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Date: Fri, 10 Feb 2023 06:09:50 GMT[\r][\n]"
+2023-02-10 14:09:50,207 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Content-Type: text/xml;charset=UTF-8[\r][\n]"
+2023-02-10 14:09:50,207 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+2023-02-10 14:09:50,208 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2023-02-10 14:09:50,208 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Vary: Accept-Encoding[\r][\n]"
+2023-02-10 14:09:50,208 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "X-Protected-By: OpenRASP[\r][\n]"
+2023-02-10 14:09:50,208 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "X-Request-ID: 8468425e5d5c4f50b19225e18a58ed87[\r][\n]"
+2023-02-10 14:09:50,209 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "X-XSS-Protection: 0[\r][\n]"
+2023-02-10 14:09:50,209 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2023-02-10 14:09:50,209 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+2023-02-10 14:09:50,209 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "[\r][\n]"
+2023-02-10 14:09:50,209 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "c6[\r][\n]"
+2023-02-10 14:09:50,210 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]m[0x90][0xdd][0xe][0x82]0[0xc][0x85]_[0xc5][0xf0][0x0][0xd4]xI[0xe6][0x12]1D2[0x85][0xb]5Q/[0x9].@[0x84]uY[0x7][0xe8][0xdb];[0xfe][0xbc][0xf2][0xaa]'[0xa7][0xed][0x97][0xd3]2[0xc2]L[0x7][0x91][0xea]d[0x8d]Z[0xae][0xde]M[0xad]([0x18][0xbc][0xad]WZ[0xab][0x3][0x0][0xca]K[0xd9]d[0xe4][0xbb][0xd6][0xe0][0xfb]h[\n]"
+2023-02-10 14:09:50,210 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "[0x18][0x4][0xc8]y[0x9]<[0xce]FJ[0x88][0xcf][0xf]g[0x8a]6AK[0xd2][0x9c][0xb0][0xa8][0xd4]Y[0x92]FE[0xb][0xd8][0xf5]~[0xdc][0x1c][0x8d][0xe3]V[0xb5][0x9f]+[0xc8]t[0xd5][0x93][0xc3][0x18]i[[0xa3]8[0xcb][0xf1])[0xf9][0x9a][0xc1]X[0x9d]Kmm[0xf9]~[0xa7]B[0xbc][\n]"
+2023-02-10 14:09:50,210 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "![0xa8][0xbf][0x1f].6~Ea{,[0xe2]4[0xb9][0x89][0xce][0xa4][0x8f][0x84][0xc1]<8[0x88][0x89][0x3][0xc3]p6[0x1e]0[0xe7][0x9d][0xf4][0xf2][0x1][0xfe][0x5]e[0x8a][0xfa]n[0x11][0x1][0x0][0x0][\r][\n]"
+2023-02-10 14:09:50,210 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "0[\r][\n]"
+2023-02-10 14:09:50,211 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "[\r][\n]"
+2023-02-10 14:09:50,211 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << HTTP/1.1 200 
+2023-02-10 14:09:50,211 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Server: nginx
+2023-02-10 14:09:50,211 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Date: Fri, 10 Feb 2023 06:09:50 GMT
+2023-02-10 14:09:50,211 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Content-Type: text/xml;charset=UTF-8
+2023-02-10 14:09:50,212 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Transfer-Encoding: chunked
+2023-02-10 14:09:50,212 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Connection: keep-alive
+2023-02-10 14:09:50,212 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Vary: Accept-Encoding
+2023-02-10 14:09:50,212 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << X-Protected-By: OpenRASP
+2023-02-10 14:09:50,212 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << X-Request-ID: 8468425e5d5c4f50b19225e18a58ed87
+2023-02-10 14:09:50,212 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << X-XSS-Protection: 0
+2023-02-10 14:09:50,212 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Strict-Transport-Security: max-age=31536000
+2023-02-10 14:09:50,212 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Content-Encoding: gzip
+2023-02-10 14:09:50,213 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Connection can be kept alive indefinitely
+2023-02-10 14:09:50,213 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection [id: 1][route: {}->http://api-c5.icoremail.net:80] can be kept alive indefinitely
+2023-02-10 14:09:50,213 [main] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] [DEBUG] - http-outgoing-1: set socket timeout to 0
+2023-02-10 14:09:50,214 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection released: [id: 1][route: {}->http://api-c5.icoremail.net:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 14:14:24,716 [main] [org.apache.http.client.protocol.RequestAddCookies] [DEBUG] - CookieSpec selected: default
+2023-02-10 14:14:24,751 [main] [org.apache.http.client.protocol.RequestAuthCache] [DEBUG] - Auth cache not set in the context
+2023-02-10 14:14:24,755 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection request: [route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2023-02-10 14:14:24,780 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection leased: [id: 0][route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 14:14:24,783 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Opening connection {}->http://api-c5.icoremail.net:80
+2023-02-10 14:14:24,854 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connecting to api-c5.icoremail.net/139.159.196.18:80
+2023-02-10 14:14:24,868 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connection established 192.168.11.11:62576<->139.159.196.18:80
+2023-02-10 14:14:24,869 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Executing request POST /apiws/services/API2 HTTP/1.1
+2023-02-10 14:14:24,869 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Target auth state: UNCHALLENGED
+2023-02-10 14:14:24,870 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Proxy auth state: UNCHALLENGED
+2023-02-10 14:14:24,873 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> POST /apiws/services/API2 HTTP/1.1
+2023-02-10 14:14:24,873 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Content-Type: text/xml; charset=UTF-8
+2023-02-10 14:14:24,874 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Content-Length: 283
+2023-02-10 14:14:24,874 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Host: api-c5.icoremail.net
+2023-02-10 14:14:24,874 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Connection: Keep-Alive
+2023-02-10 14:14:24,874 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)
+2023-02-10 14:14:24,876 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2023-02-10 14:14:24,876 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "POST /apiws/services/API2 HTTP/1.1[\r][\n]"
+2023-02-10 14:14:24,876 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Content-Type: text/xml; charset=UTF-8[\r][\n]"
+2023-02-10 14:14:24,876 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Content-Length: 283[\r][\n]"
+2023-02-10 14:14:24,876 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Host: api-c5.icoremail.net[\r][\n]"
+2023-02-10 14:14:24,876 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2023-02-10 14:14:24,876 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)[\r][\n]"
+2023-02-10 14:14:24,877 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-02-10 14:14:24,877 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "[\r][\n]"
+2023-02-10 14:14:24,877 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 >> "<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:apiw="http://coremail.cn/apiws"><soapenv:Header/><soapenv:Body><apiw:requestToken><app_id>public@poissonsoft.com</app_id><secret>Public123</secret></apiw:requestToken></soapenv:Body></soapenv:Envelope>"
+2023-02-10 14:14:24,895 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+2023-02-10 14:14:24,896 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Server: nginx[\r][\n]"
+2023-02-10 14:14:24,896 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Date: Fri, 10 Feb 2023 06:14:25 GMT[\r][\n]"
+2023-02-10 14:14:24,897 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Content-Type: text/xml;charset=UTF-8[\r][\n]"
+2023-02-10 14:14:24,897 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2023-02-10 14:14:24,897 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2023-02-10 14:14:24,897 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2023-02-10 14:14:24,897 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-Protected-By: OpenRASP[\r][\n]"
+2023-02-10 14:14:24,898 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-Request-ID: cc46faf0420141b1b7eebddc34490f8a[\r][\n]"
+2023-02-10 14:14:24,898 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+2023-02-10 14:14:24,898 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2023-02-10 14:14:24,898 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2023-02-10 14:14:24,898 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[\r][\n]"
+2023-02-10 14:14:24,899 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "e8[\r][\n]"
+2023-02-10 14:14:24,899 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]u[0x90][0xcb]n[0xc2]0[0x10]E[0x5][0xf1][0x1][0x19][0x8][0x8f]&[0x91]k[0xa9]H[0x15][0xa0][0x16][0xb5][0xa2][0xac][0xd8]%[0xf6][0xf0][0xaa]c[0xbb][0x1e];m[0xff][0xbe]N[0x8][0xdd][0xb1][0x9a][0xab]{5g[0x1e][0x8c]Li[0x8b]g[0xdd][0xa0]2[0x16][0x7]?[0xb5][0xd2]T[0xb4][0xde][0xe3][0xf0][0xe4][0xbd]-[0x0]H[0x9c][0xb0].)[0x89]Q[0xeb]'[0xc6][0x1d][0xa1][0x15][0x80]}[0x13][0xc]9[0xeb]([0xb]#9[0xd3][0x94][0x16][0xe][0xbf][0x2][0x92][0xdf][0x99]O[0xd4][$k4[0xdd][0xd8]1[0xfe]G[0xb][0xe3]"[0xfa][0xac][0x12][0xa1][0xa1][0xb4][0xe7]o[0x8a]$[0x87]>8[0xcd][0x99]0[0x12][0xf9][0x88]AW[0xa3]KAy[0xbe]xZ[0xae][0xd6][0xa1]i[0xfc]Z][0xea][0xf0][0xfa][0xbe][0xaf][0xf0][0xe5]-|l[0xec][0xb1])7K[0xb7][0x1d]<L[0xf2][0x91][0x9c][0xa3][0xac][0xc6]Y6[0xce][0xd2][0xf4]0[0xc9][0xa7][0x87]*[0x9b][0xe5]"[0x95][0xf9]L [0x83][0x9e][0xd4][0x8a][0xeb] [0xb8][0xb7]0g[0xdd][0x9d][0xfd]YW}{[0x14][0xff][0x3]c#$[0xca]8[0x1][0x0][0x0][\r][\n]"
+2023-02-10 14:14:24,899 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "0[\r][\n]"
+2023-02-10 14:14:24,899 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-0 << "[\r][\n]"
+2023-02-10 14:14:24,904 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << HTTP/1.1 200 
+2023-02-10 14:14:24,905 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Server: nginx
+2023-02-10 14:14:24,905 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Date: Fri, 10 Feb 2023 06:14:25 GMT
+2023-02-10 14:14:24,905 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Content-Type: text/xml;charset=UTF-8
+2023-02-10 14:14:24,905 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Transfer-Encoding: chunked
+2023-02-10 14:14:24,905 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Connection: keep-alive
+2023-02-10 14:14:24,906 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Vary: Accept-Encoding
+2023-02-10 14:14:24,906 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-Protected-By: OpenRASP
+2023-02-10 14:14:24,906 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-Request-ID: cc46faf0420141b1b7eebddc34490f8a
+2023-02-10 14:14:24,906 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << X-XSS-Protection: 0
+2023-02-10 14:14:24,906 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+2023-02-10 14:14:24,907 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-0 << Content-Encoding: gzip
+2023-02-10 14:14:24,916 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Connection can be kept alive indefinitely
+2023-02-10 14:14:24,923 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection [id: 0][route: {}->http://api-c5.icoremail.net:80] can be kept alive indefinitely
+2023-02-10 14:14:24,924 [main] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] [DEBUG] - http-outgoing-0: set socket timeout to 0
+2023-02-10 14:14:24,924 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection released: [id: 0][route: {}->http://api-c5.icoremail.net:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 14:14:25,089 [main] [org.apache.http.client.protocol.RequestAddCookies] [DEBUG] - CookieSpec selected: default
+2023-02-10 14:14:25,090 [main] [org.apache.http.client.protocol.RequestAuthCache] [DEBUG] - Auth cache not set in the context
+2023-02-10 14:14:25,090 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection request: [route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2023-02-10 14:14:25,090 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection leased: [id: 1][route: {}->http://api-c5.icoremail.net:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2023-02-10 14:14:25,090 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Opening connection {}->http://api-c5.icoremail.net:80
+2023-02-10 14:14:25,091 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connecting to api-c5.icoremail.net/139.159.196.18:80
+2023-02-10 14:14:25,104 [main] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] [DEBUG] - Connection established 192.168.11.11:62577<->139.159.196.18:80
+2023-02-10 14:14:25,104 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Executing request POST /apiws/services/API2 HTTP/1.1
+2023-02-10 14:14:25,104 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Target auth state: UNCHALLENGED
+2023-02-10 14:14:25,104 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Proxy auth state: UNCHALLENGED
+2023-02-10 14:14:25,105 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> POST /apiws/services/API2 HTTP/1.1
+2023-02-10 14:14:25,105 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Content-Type: text/xml; charset=UTF-8
+2023-02-10 14:14:25,105 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Content-Length: 350
+2023-02-10 14:14:25,105 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Host: api-c5.icoremail.net
+2023-02-10 14:14:25,105 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Connection: Keep-Alive
+2023-02-10 14:14:25,105 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)
+2023-02-10 14:14:25,105 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2023-02-10 14:14:25,105 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "POST /apiws/services/API2 HTTP/1.1[\r][\n]"
+2023-02-10 14:14:25,105 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Content-Type: text/xml; charset=UTF-8[\r][\n]"
+2023-02-10 14:14:25,105 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Content-Length: 350[\r][\n]"
+2023-02-10 14:14:25,105 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Host: api-c5.icoremail.net[\r][\n]"
+2023-02-10 14:14:25,106 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2023-02-10 14:14:25,106 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_201)[\r][\n]"
+2023-02-10 14:14:25,106 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-02-10 14:14:25,106 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "[\r][\n]"
+2023-02-10 14:14:25,106 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 >> "<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:apiw="http://coremail.cn/apiws"><soapenv:Header/><soapenv:Body><apiw:userLogin><_token>BAGHIuvvtIljmuLPZbeKOuSMpgvaMGrR 7390d6edb1881822f394fb859c2d95ce</_token><user_at_domain>chenhua@poissonsoft.com</user_at_domain></apiw:userLogin></soapenv:Body></soapenv:Envelope>"
+2023-02-10 14:14:25,127 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "HTTP/1.1 200 [\r][\n]"
+2023-02-10 14:14:25,127 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Server: nginx[\r][\n]"
+2023-02-10 14:14:25,127 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Date: Fri, 10 Feb 2023 06:14:25 GMT[\r][\n]"
+2023-02-10 14:14:25,127 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Content-Type: text/xml;charset=UTF-8[\r][\n]"
+2023-02-10 14:14:25,128 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+2023-02-10 14:14:25,128 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2023-02-10 14:14:25,128 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Vary: Accept-Encoding[\r][\n]"
+2023-02-10 14:14:25,128 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "X-Protected-By: OpenRASP[\r][\n]"
+2023-02-10 14:14:25,128 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "X-Request-ID: b7cce180709341a2b285826953ebb1c7[\r][\n]"
+2023-02-10 14:14:25,129 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "X-XSS-Protection: 0[\r][\n]"
+2023-02-10 14:14:25,129 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2023-02-10 14:14:25,129 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+2023-02-10 14:14:25,129 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "[\r][\n]"
+2023-02-10 14:14:25,129 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "c5[\r][\n]"
+2023-02-10 14:14:25,130 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]m[0x90][0xdd][\n]"
+2023-02-10 14:14:25,130 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "[0xc2]0[0xc][0x85]_E[0xf6][0x0][0x8b]x9j[0xc1][0xa9][0xa0][0xe0][0x85][\n]"
+2023-02-10 14:14:25,130 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "[\n]"
+2023-02-10 14:14:25,130 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "[0xee]n?e[0x1b][0xb4]Mi[0xba]9[0xdf][0xde]v?^y[0x95][0xc3]I[0xf2]q[0x12]F[0x98][0x9b][0xe4][0xa8]{![0xd1][0x88][0xd5][0xa0][0xa4][0xa6]$x[0xdb][0xa8]q[0xce]$[0x0]T6B[0xe5][0x14][0xfb]V[0xf0]c[0xb4]5[0x4][0x1]b^[0x82][0x88][0xb3][0x91][0x92]b[0xf5][0xe1]L[0xd3]&[0xe9]H[0xd8][0xb][0xd6][0xad][0xbe][0xb]2[0xa8]i[0x1][0xfb][0xde][0x8f][[0xa2][0xf5][0xdc]V[0xc6][0xa5][0x86][0xdc][0xb4]o[0xf2][0x18]+\g5g%V[0x82][0xaf][0x19][0x8c][0xd5][0xbb][0xd4]I[0xc7][0xd3][0x9d];[0x9d][0xbb][0xbe][0x97][0xaf][0xab]z[0xaa][0xa2][0xc9][0xf6]zP[0xa6]x`v[0xab]+<T[0xc][0xe6][0xc1] &[0xe][0xfc][\r][0xc3][0xd9]x[0xc0][0x9c]w[0xd2][0xcb][0x7][0xf8][0x17][0xdb][0xe2][0x14][0x9f][0x11][0x1][0x0][0x0][\r][\n]"
+2023-02-10 14:14:25,130 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "0[\r][\n]"
+2023-02-10 14:14:25,131 [main] [org.apache.http.wire] [DEBUG] - http-outgoing-1 << "[\r][\n]"
+2023-02-10 14:14:25,131 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << HTTP/1.1 200 
+2023-02-10 14:14:25,131 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Server: nginx
+2023-02-10 14:14:25,131 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Date: Fri, 10 Feb 2023 06:14:25 GMT
+2023-02-10 14:14:25,132 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Content-Type: text/xml;charset=UTF-8
+2023-02-10 14:14:25,132 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Transfer-Encoding: chunked
+2023-02-10 14:14:25,132 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Connection: keep-alive
+2023-02-10 14:14:25,132 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Vary: Accept-Encoding
+2023-02-10 14:14:25,133 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << X-Protected-By: OpenRASP
+2023-02-10 14:14:25,133 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << X-Request-ID: b7cce180709341a2b285826953ebb1c7
+2023-02-10 14:14:25,133 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << X-XSS-Protection: 0
+2023-02-10 14:14:25,133 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Strict-Transport-Security: max-age=31536000
+2023-02-10 14:14:25,133 [main] [org.apache.http.headers] [DEBUG] - http-outgoing-1 << Content-Encoding: gzip
+2023-02-10 14:14:25,134 [main] [org.apache.http.impl.execchain.MainClientExec] [DEBUG] - Connection can be kept alive indefinitely
+2023-02-10 14:14:25,134 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection [id: 1][route: {}->http://api-c5.icoremail.net:80] can be kept alive indefinitely
+2023-02-10 14:14:25,135 [main] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] [DEBUG] - http-outgoing-1: set socket timeout to 0
+2023-02-10 14:14:25,135 [main] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] [DEBUG] - Connection released: [id: 1][route: {}->http://api-c5.icoremail.net:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]

@@ -1,0 +1,7 @@
+2023-04-18 16:01:40,654 [Timer-0] [A2] [INFO] - rootPath == null
+2023-04-18 16:01:40,658 [Timer-0] [A2] [INFO] - filePath == nullWEB-INF\prop\isSyncLog4j.properties
+2023-04-18 18:35:33,328 [main] [A2] [INFO] - rootPath == null
+2023-04-18 18:35:33,332 [main] [A2] [INFO] - filePath == nullWEB-INF\prop\isSyncLog4j.properties
+2023-04-18 18:35:33,336 [main] [A2] [INFO] - poolname==null
+2023-04-19 14:16:27,181 [Timer-0] [A2] [INFO] - rootPath == null
+2023-04-19 14:16:27,185 [Timer-0] [A2] [INFO] - filePath == nullWEB-INF\prop\isSyncLog4j.properties
